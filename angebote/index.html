@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Angebote – CHECKPOINT Kassel</title>
+  <meta name="description" content="Aktuelle Werkstatt-Angebote von CHECKPOINT Kassel: Reifen, Heizung & Klimaanlage, Hol- & Bringservice sowie Ölwechsel mit Extra-Check.">
+  <meta name="theme-color" content="#061326">
+  <link rel="canonical" href="https://sandroabashishvili.github.io/checkpoint-kassel/angebote/">
+  <link rel="icon" href="../assets/images/checkpoint-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/app.js" defer></script>
+  <style>
+    .offers-showcase {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.35rem;
+      margin-top: 1.8rem;
+    }
+
+    .offer-card {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-height: 260px;
+      padding: 1.55rem;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 18px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.035), rgba(255,255,255,.008)),
+        rgba(18,56,95,.72);
+    }
+
+    .offer-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 4px;
+      background: #26d875;
+    }
+
+    .offer-card-head {
+      display: flex;
+      align-items: center;
+      gap: .9rem;
+      margin-bottom: 1rem;
+    }
+
+    .offer-icon {
+      width: 48px;
+      height: 48px;
+      flex: 0 0 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.055);
+      font-size: 1.35rem;
+      line-height: 1;
+    }
+
+    .offer-card .eyebrow {
+      margin: 0 0 .2rem;
+    }
+
+    .offer-card h2 {
+      margin: 0;
+      font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+      line-height: 1.08;
+    }
+
+    .offer-benefit {
+      margin: .25rem 0 .8rem;
+      font-size: clamp(1.35rem, 2.7vw, 2rem);
+      line-height: 1.05;
+      font-weight: 800;
+      letter-spacing: -.03em;
+    }
+
+    .offer-card > p:not(.eyebrow):not(.offer-benefit) {
+      margin: 0 0 1.15rem;
+      max-width: 52ch;
+      opacity: .9;
+    }
+
+    .offer-card-footer {
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,.10);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .9rem;
+    }
+
+    .offer-card-footer small {
+      opacity: .72;
+      line-height: 1.35;
+    }
+
+    .offer-card .button {
+      white-space: nowrap;
+    }
+
+    .offer-card:nth-child(2)::before {
+      background: #53b9ff;
+    }
+
+    .offer-card:nth-child(3)::before {
+      background: #ffd166;
+    }
+
+    .offer-card:nth-child(4)::before {
+      background: #b68cff;
+    }
+
+    .offer-note {
+      margin-top: 1.15rem;
+      font-size: .92rem;
+      opacity: .76;
+    }
+
+    @media (max-width: 860px) {
+      .offers-showcase {
+        grid-template-columns: 1fr;
+      }
+
+      .offer-card {
+        min-height: unset;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .offer-card {
+        padding: 1.25rem;
+      }
+
+      .offer-card-footer {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .offer-card .button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="../" aria-label="CHECKPOINT Startseite">
+        <img src="../assets/images/checkpoint-mark.svg" alt="" width="43" height="43">
+        <span class="brand-copy"><strong>CHECKPOINT</strong><small>Ihr KFZ-Meisterbetrieb</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menü öffnen"><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation">
+        <a href="../">Startseite</a>
+        <a href="../leistungen/">Leistungen</a>
+        <a href="../angebote/" aria-current="page">Angebote</a>
+        <a href="../ueber-uns/">Über uns</a>
+        <a href="../kontakt/">Kontakt</a>
+        <a class="nav-call" href="tel:+49561577795">☎ 0561 57 77 95</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">CHECKPOINT ANGEBOTE</p>
+        <h1 class="two-line-heading"><span>AKTUELLE ANGEBOTE</span><span>AUS DER WERKSTATT</span></h1>
+        <p class="lead two-line-copy"><span>Ausgewählte Service-Aktionen und praktische Vorteile</span><span>für Ihr Fahrzeug bei CHECKPOINT in Kassel.</span></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="catalog-intro">
+          <div><p class="eyebrow">Mehr Service für Ihr Fahrzeug</p><h2>Unsere aktuellen Vorteile</h2></div>
+          <p>Klare Angebote, sinnvolle Zusatzleistungen und bequemer Werkstattservice – direkt mit CHECKPOINT abstimmen.</p>
+        </div>
+
+        <div class="offers-showcase">
+          <article class="offer-card">
+            <div class="offer-card-head">
+              <span class="offer-icon" aria-hidden="true">◉</span>
+              <div>
+                <p class="eyebrow">Reifen-Aktion</p>
+                <h2>4 Reifen kaufen</h2>
+              </div>
+            </div>
+            <p class="offer-benefit">Montage inklusive</p>
+            <p>Beim Kauf von vier Reifen ist die Montage bereits inklusive. Reifen und Montage erhalten Sie bequem aus einer Hand.</p>
+            <div class="offer-card-footer">
+              <small>Direkt mit der Werkstatt abstimmen</small>
+              <a class="button button-primary" href="https://wa.me/4917680794113?text=Hallo%20CHECKPOINT%2C%20ich%20interessiere%20mich%20f%C3%BCr%20die%20Reifen-Aktion." target="_blank" rel="noopener noreferrer">Anfragen</a>
+            </div>
+          </article>
+
+          <article class="offer-card">
+            <div class="offer-card-head">
+              <span class="offer-icon" aria-hidden="true">❄</span>
+              <div>
+                <p class="eyebrow">Heizung & Klimaanlage</p>
+                <h2>Service & Reparatur</h2>
+              </div>
+            </div>
+            <p class="offer-benefit">Diagnose-Check inklusive</p>
+            <p>Bei Arbeiten an Heizung oder Klimaanlage lesen wir den Fehlerspeicher Ihres Fahrzeugs elektronisch aus – ohne zusätzliche Berechnung.</p>
+            <div class="offer-card-footer">
+              <small>Elektronischer Fehlerspeicher-Check</small>
+              <a class="button button-primary" href="https://wa.me/4917680794113?text=Hallo%20CHECKPOINT%2C%20ich%20habe%20eine%20Frage%20zu%20Heizung%20oder%20Klimaanlage." target="_blank" rel="noopener noreferrer">Anfragen</a>
+            </div>
+          </article>
+
+          <article class="offer-card">
+            <div class="offer-card-head">
+              <span class="offer-icon" aria-hidden="true">↔</span>
+              <div>
+                <p class="eyebrow">Mehr Komfort</p>
+                <h2>Hol- & Bringservice</h2>
+              </div>
+            </div>
+            <p class="offer-benefit">Wir sparen Ihnen den Weg</p>
+            <p>Auf Wunsch holen wir Ihr Fahrzeug nach Absprache ab und bringen es nach erledigter Arbeit wieder zurück.</p>
+            <div class="offer-card-footer">
+              <small>Nach Absprache und Verfügbarkeit</small>
+              <a class="button button-primary" href="https://wa.me/4917680794113?text=Hallo%20CHECKPOINT%2C%20ich%20interessiere%20mich%20f%C3%BCr%20den%20Hol-%20und%20Bringservice." target="_blank" rel="noopener noreferrer">Anfragen</a>
+            </div>
+          </article>
+
+          <article class="offer-card">
+            <div class="offer-card-head">
+              <span class="offer-icon" aria-hidden="true">✦</span>
+              <div>
+                <p class="eyebrow">Ölwechsel mit Extra-Check</p>
+                <h2>Motor- & Getriebeöl</h2>
+              </div>
+            </div>
+            <p class="offer-benefit">Fahrwerks- & Diagnose-Check inklusive</p>
+            <p>Beim Motor- oder Getriebeölwechsel prüfen wir zusätzlich das Fahrwerk und lesen den Fehlerspeicher elektronisch aus.</p>
+            <div class="offer-card-footer">
+              <small>Zwei Zusatzchecks inklusive</small>
+              <a class="button button-primary" href="https://wa.me/4917680794113?text=Hallo%20CHECKPOINT%2C%20ich%20interessiere%20mich%20f%C3%BCr%20den%20%C3%96lwechsel-Service%20mit%20Extra-Check." target="_blank" rel="noopener noreferrer">Anfragen</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="offer-note">Details zu Verfügbarkeit und Termin stimmen wir direkt mit Ihnen ab.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container cta-panel">
+        <div><p class="eyebrow">DIREKT ANFRAGEN</p><h2>Welche Aktion passt zu Ihrem Fahrzeug?</h2><p>Schreiben Sie uns per WhatsApp oder rufen Sie direkt an – wir stimmen alles Weitere mit Ihnen ab.</p></div>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://wa.me/4917680794113?text=Hallo%20CHECKPOINT%2C%20ich%20habe%20eine%20Frage%20zu%20einem%20aktuellen%20Angebot." target="_blank" rel="noopener noreferrer">WhatsApp schreiben</a>
+          <a class="button" href="tel:+49561577795">Jetzt anrufen</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><a class="brand" href="../"><img src="../assets/images/checkpoint-mark.svg" alt="" width="43" height="43"><span class="brand-copy"><strong>CHECKPOINT</strong><small>Ihr KFZ-Meisterbetrieb</small></span></a></div>
+        <div><p class="footer-title">Navigation</p><div class="footer-links"><a href="../leistungen/">Leistungen</a><a href="../ueber-uns/">Über uns</a><a href="../kontakt/">Kontakt</a></div></div>
+        <div><p class="footer-title">Rechtliches</p><div class="footer-links"><a href="../impressum/">Impressum</a><a href="../datenschutz/">Datenschutz</a></div></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year></span> CHECKPOINT</span><span>Franzgraben 40–42 · 34125 Kassel</span></div>
+    </div>
+  </footer>
+</body>
+</html>

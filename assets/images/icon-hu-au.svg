@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" role="img" aria-labelledby="title">
+  <title id="title">HU und AU</title>
+  <path d="M20 72a40 40 0 1 1 70 0" fill="none" stroke="#f5f8ff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M29 66l-7-4" fill="none" stroke="#3d8dff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M35 52l-6-7" fill="none" stroke="#58c7ff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M49 46l-2-9" fill="none" stroke="#ffbc66" stroke-width="4" stroke-linecap="round"/>
+  <path d="M67 46l3-9" fill="none" stroke="#ff7b54" stroke-width="4" stroke-linecap="round"/>
+  <path d="M82 52l7-6" fill="none" stroke="#ff5d6c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M55 63l17-17" fill="none" stroke="#2fd56b" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="55" cy="63" r="10" fill="#ff8c42" stroke="#f5f8ff" stroke-width="2"/>
+  <text x="55" y="67" fill="#061326" font-family="Arial, sans-serif" font-size="10" font-weight="900" text-anchor="middle">12</text>
+  <path d="M31 78h48" fill="none" stroke="#f5f8ff" stroke-width="4" stroke-linecap="round"/>
+  <text x="55" y="96" fill="#f5f8ff" font-family="Arial, sans-serif" font-size="15" font-weight="700" text-anchor="middle">HU / AU</text>
+</svg>

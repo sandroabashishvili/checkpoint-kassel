@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" role="img" aria-labelledby="title">
+  <title id="title">Auto-Diagnose</title>
+  <rect x="18" y="28" width="74" height="55" rx="14" fill="none" stroke="#f5f8ff" stroke-width="4"/>
+  <path d="M31 28v-9h18M21 42H11M21 58H11M21 74H11M99 42h-9M99 58h-9M99 74h-9" fill="none" stroke="#f5f8ff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M38 55l12 12 25-28" fill="none" stroke="#2fd56b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

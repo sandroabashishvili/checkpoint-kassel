@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">CHECKPOINT Prüfzeichen</title>
+  <circle cx="48" cy="48" r="42" fill="none" stroke="#f5f8ff" stroke-width="5"/>
+  <g stroke="#f5f8ff" stroke-width="3" stroke-linecap="round">
+    <path d="M48 6v10M69 12l-5 9M84 27l-9 5M90 48H80M27 12l5 9M12 27l9 5M6 48h10M13 69l9-5M28 84l5-9M48 90V80"/>
+  </g>
+  <path d="M22 48l17 18 35-39" fill="none" stroke="#2fd56b" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M22 48l17 18 35-39" fill="none" stroke="#f5f8ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
+</svg>
