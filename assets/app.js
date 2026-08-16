@@ -35,6 +35,12 @@ document.querySelectorAll('[data-year]').forEach(node => {
   node.textContent = new Date().getFullYear();
 });
 
+/* Keep offer labels typographically clean. */
+document.querySelectorAll('.offers-showcase h2').forEach(node => {
+  if (node.textContent.trim() === 'Hol- & Bringservice') node.textContent = 'Hol & Bringservice';
+  if (node.textContent.trim() === 'Motor- & Getriebeöl') node.textContent = 'Motor & Getriebeöl';
+});
+
 document.querySelectorAll('a.brand').forEach(link => {
   if (!link.hasAttribute('aria-label')) {
     link.setAttribute('aria-label', 'CHECKPOINT Startseite');
