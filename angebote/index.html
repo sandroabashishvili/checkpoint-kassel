@@ -21,8 +21,6 @@
     }
 
     .offer-card {
-      position: relative;
-      overflow: hidden;
       display: flex;
       flex-direction: column;
       min-height: 260px;
@@ -32,14 +30,6 @@
       background:
         linear-gradient(145deg, rgba(255,255,255,.035), rgba(255,255,255,.008)),
         rgba(18,56,95,.72);
-    }
-
-    .offer-card::before {
-      content: "";
-      position: absolute;
-      inset: 0 auto 0 0;
-      width: 4px;
-      background: #26d875;
     }
 
     .offer-card-head {
@@ -95,18 +85,6 @@
     .offer-card-footer small {
       opacity: .72;
       line-height: 1.35;
-    }
-
-    .offer-card:nth-child(2)::before {
-      background: #53b9ff;
-    }
-
-    .offer-card:nth-child(3)::before {
-      background: #ffd166;
-    }
-
-    .offer-card:nth-child(4)::before {
-      background: #b68cff;
     }
 
     .offer-note {
