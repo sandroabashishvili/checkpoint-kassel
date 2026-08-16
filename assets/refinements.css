@@ -25,9 +25,8 @@
 .service-items article:hover { z-index: auto; transform: none; background: color-mix(in srgb, var(--group-accent) 3%, transparent); box-shadow: none; }
 .service-items article:hover h3 { color: inherit; }
 
-/* Keep cards cleaner: accents live in icons/headings, not full-height side bars. */
-.service-group::before,
-.offers-showcase .offer-card::before { display: none !important; content: none !important; }
+/* Service-group accents stay in icons/headings instead of full-height side bars. */
+.service-group::before { display: none !important; content: none !important; }
 
 @media (min-width: 1200px) {
   .cta-panel h2 { white-space: nowrap; overflow-wrap: normal; font-size: clamp(2.15rem, 2.45vw, 2.6rem); }
@@ -52,6 +51,7 @@
   body .offers-showcase .offer-card:nth-child(4) .offer-icon { color: #6b4bb2; border-color: rgba(107,75,178,.28); background: rgba(107,75,178,.08); }
 }
 
+/* styles.css keeps the light-theme mobile menu dark; desktop navigation stays transparent. */
 @media (prefers-color-scheme: light) and (min-width: 981px) {
   body .site-header .site-nav { background: transparent !important; background-color: transparent !important; box-shadow: none !important; }
 }
