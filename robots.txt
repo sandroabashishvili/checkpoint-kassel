@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sandroabashishvili.github.io/checkpoint-kassel/sitemap.xml
+Sitemap: https://sandro-abashishvili.de/checkpoint-kassel/sitemap.xml
