@@ -2,7 +2,7 @@
 
 Responsive prototype website for CHECKPOINT KFZ-Meisterbetrieb in Kassel.
 
-Live preview: `https://sandroabashishvili.github.io/checkpoint-kassel/`
+Preview: `https://sandro-abashishvili.de/checkpoint-kassel/` (`noindex, nofollow`)
 
 ## Current status
 

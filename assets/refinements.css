@@ -78,3 +78,14 @@
   .cta-panel .hero-actions .button,
   .services-cta .hero-actions .button { width: 100%; min-width: 0; }
 }
+
+@media (max-width: 480px) {
+  .legal-header .nav-shell { gap: 8px; }
+  body .legal-header .brand { min-width: 0; }
+  body .legal-header .brand::before { width: 168px; height: 34px; }
+  .legal-header .nav-shell > .button {
+    min-height: 40px;
+    padding: 8px 10px;
+    font-size: .72rem;
+  }
+}
