@@ -169,3 +169,63 @@
   .home-offer-card { min-height: 0; }
   .home-offer-actions { width: 100%; max-width: 340px; }
 }
+
+
+/* Services page contact panel */
+.services-contact-section { padding-top: 54px; }
+.services-contact-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
+  align-items: center;
+  gap: clamp(36px, 6vw, 80px);
+  padding: clamp(34px, 5vw, 56px);
+  border: 1px solid rgba(61,141,255,.28);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 100% 0, rgba(61,141,255,.16), transparent 34%),
+    linear-gradient(135deg, #102a4b, #153f6e);
+  box-shadow: 0 18px 46px rgba(0,0,0,.18);
+}
+.services-contact-copy { max-width: 760px; }
+.services-contact-copy .eyebrow { margin-bottom: 12px; }
+.services-contact-copy h2 {
+  margin-bottom: 14px;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+}
+.services-contact-copy p:last-child {
+  max-width: 64ch;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+.services-contact-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  align-content: center;
+}
+.services-contact-actions .button { width: 100%; min-width: 0; }
+.services-contact-meta {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: .9rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+.services-contact-meta:hover { color: var(--text); text-decoration: underline; text-underline-offset: 4px; }
+
+@media (max-width: 900px) {
+  .services-contact-card {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .services-contact-actions { max-width: 360px; }
+}
+
+@media (max-width: 620px) {
+  .services-contact-section { padding-top: 40px; }
+  .services-contact-card { padding: 26px 22px; }
+  .services-contact-actions { max-width: none; width: 100%; }
+}
