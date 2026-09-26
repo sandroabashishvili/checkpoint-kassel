@@ -111,45 +111,6 @@
 .home-offer-actions .button { width: 100%; }
 .home-offer-actions .text-link { margin-top: 0; }
 
-/* Real actions only: compact mobile contact bar. */
-.mobile-contact-bar { display: none; }
-
-@media (max-width: 720px) {
-  body { padding-bottom: 68px; }
-  .home-offer { padding-top: 0; }
-  .home-offer-card { grid-template-columns: 1fr; gap: 22px; padding: 24px 20px; }
-  .home-offer-actions { width: 100%; min-width: 0; }
-  .home-offer-actions .button { width: 100%; }
-
-  .mobile-contact-bar {
-    position: fixed;
-    z-index: 60;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    display: grid;
-    grid-template-columns: 1.2fr .8fr;
-    gap: 8px;
-    padding: 8px;
-    border: 1px solid rgba(255,255,255,.14);
-    border-radius: 16px;
-    background: rgba(4,16,31,.94);
-    box-shadow: 0 14px 36px rgba(0,0,0,.28);
-    backdrop-filter: blur(16px);
-  }
-  .mobile-contact-bar a {
-    min-height: 44px;
-    display: grid;
-    place-items: center;
-    padding: 9px 12px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: 850;
-  }
-  .mobile-contact-bar a:first-child { background: var(--brand); color: #03160a; }
-  .mobile-contact-bar a:last-child { border: 1px solid rgba(255,255,255,.2); color: #f7f9fd; }
-}
-
 @media (prefers-color-scheme: light) {
   .home-offer-card {
     border-color: rgba(8,122,60,.22);
