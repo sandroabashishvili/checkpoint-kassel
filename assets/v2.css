@@ -83,7 +83,7 @@ body .site-nav a[aria-current="page"]::after { right: 0; bottom: -12px; }
 .service-items article:hover h3 { color: var(--group-accent); }
 .service-items article:nth-last-child(-n + 2) { border-bottom-color: transparent; }
 .service-items h3 { margin-bottom: 4px; font-size: 1rem; }
-.service-items p { margin: 0; color: var(--muted); font-size: .86rem; line-height: 1.45; }
+.service-items p { margin: 0; color: var(--muted); font-size: .94rem; line-height: 1.5; }
 .services-cta { grid-template-columns: minmax(0, 1fr) auto; align-items: center; }
 .services-cta > div:first-child { max-width: 760px; }
 .services-cta .hero-actions { display: grid; min-width: 275px; justify-content: stretch; margin: 0; }
