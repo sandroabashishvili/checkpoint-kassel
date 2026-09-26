@@ -78,8 +78,7 @@ body .site-nav a[aria-current="page"]::after { right: 0; bottom: -12px; }
 .service-group > header h2 { margin: 0; font-size: clamp(1.45rem, 2.3vw, 2rem); }
 .service-group-icon { width: 54px; height: 54px; display: grid; place-items: center; flex: 0 0 auto; border: 1px solid color-mix(in srgb, var(--group-accent) 45%, transparent); border-radius: 16px; background: color-mix(in srgb, var(--group-accent) 12%, transparent); color: var(--group-accent); font-size: 1.65rem; font-weight: 900; }
 .service-items { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 22px; }
-.service-items article { position: relative; min-height: 84px; margin-inline: -8px; padding: 14px 8px 14px 29px; border-bottom: 1px solid var(--line); border-radius: 10px; transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease; }
-.service-items article::before { content: ""; position: absolute; left: 0; top: 23px; width: 8px; height: 8px; border: 2px solid var(--group-accent); border-radius: 50%; }
+.service-items article { position: relative; min-height: 84px; margin-inline: -8px; padding: 14px 8px; border-bottom: 1px solid var(--line); border-radius: 10px; transition: background-color .2s ease, transform .2s ease, box-shadow .2s ease; }
 .service-items article:hover { z-index: 1; background: color-mix(in srgb, var(--group-accent) 9%, transparent); box-shadow: inset 3px 0 0 var(--group-accent); transform: translateX(4px); }
 .service-items article:hover h3 { color: var(--group-accent); }
 .service-items article:nth-last-child(-n + 2) { border-bottom-color: transparent; }
