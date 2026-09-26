@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Angebote – CHECKPOINT Kassel</title>
-  <meta name="description" content="Aktuelle Werkstatt-Angebote von CHECKPOINT Kassel: Reifen, Reifenhotel, Heizung & Klimaanlage, Hol & Bringservice sowie Ölwechsel ab 75 €.">
+  <meta name="description" content="Aktuelle Werkstatt-Angebote bei CHECKPOINT Kassel: Reifenservice, Reifenhotel ab 10 € / Monat, Ölwechsel ab 75 €, Klima-Service und Hol- & Bringservice.">
   <meta name="theme-color" content="#061326">
   <link rel="canonical" href="https://sandro-abashishvili.de/checkpoint-kassel/angebote/">
   <link rel="icon" href="../assets/images/checkpoint-mark.svg" type="image/svg+xml">
@@ -15,12 +15,13 @@
   <style>
     .offers-showcase {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(6, minmax(0, 1fr));
       gap: 1.2rem;
       margin-top: 1.8rem;
     }
 
     .offer-card {
+      grid-column: span 2;
       display: flex;
       flex-direction: column;
       min-height: 100%;
@@ -33,11 +34,10 @@
     }
 
     .offer-card-featured {
-      grid-column: 1 / -1;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(220px, 290px);
-      align-items: center;
-      gap: clamp(28px, 5vw, 70px);
+      grid-column: span 3;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
       padding: clamp(1.65rem, 3.5vw, 2.4rem);
       border-color: rgba(47,213,107,.42);
       background:
@@ -49,7 +49,13 @@
     .offer-card-featured .offer-main-copy { min-width: 0; }
     .offer-card-featured .offer-benefit {
       margin-top: .15rem;
-      font-size: clamp(1.8rem, 3.4vw, 3rem);
+      font-size: clamp(1.7rem, 2.8vw, 2.55rem);
+    }
+    .offer-card-featured .offer-card-head h2 {
+      font-size: clamp(1.25rem, 1.8vw, 1.6rem);
+    }
+    .offer-card-featured.reifenhotel-card .offer-card-head h2 {
+      white-space: nowrap;
     }
 
     .offer-card-head {
@@ -124,9 +130,10 @@
 
     .offer-featured-action {
       display: grid;
-      gap: 12px;
-      align-self: stretch;
-      align-content: center;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,.10);
     }
 
     .offer-featured-action .button { width: 100%; }
@@ -140,14 +147,14 @@
 
     @media (max-width: 1050px) {
       .offers-showcase { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .offer-card-featured { grid-template-columns: 1fr; }
-      .offer-featured-action { max-width: 320px; }
+      .offer-card,
+      .offer-card-featured { grid-column: auto; }
+      .offer-card-featured.reifenhotel-card .offer-card-head h2 { white-space: normal; }
     }
 
     @media (max-width: 720px) {
       .offers-showcase { grid-template-columns: 1fr; }
       .offer-card { min-height: unset; }
-      .offer-card-featured { grid-column: auto; }
       .offer-card-footer { align-items: flex-start; flex-direction: column; }
     }
 
@@ -190,7 +197,7 @@
       <div class="container">
         <div class="catalog-intro">
           <div><p class="eyebrow">Mehr Service für Ihr Fahrzeug</p><h2>Unsere aktuellen Vorteile</h2></div>
-          <p>Klare Angebote, sinnvolle Zusatzleistungen und bequemer Werkstattservice – direkt mit CHECKPOINT abstimmen.</p>
+          <p>Attraktive Werkstatt-Angebote in Kassel, klare Leistungen und praktische Vorteile – damit Sie schnell sehen, welcher Service zu Ihrem Fahrzeug passt.</p>
         </div>
 
         <div class="offers-showcase">
@@ -204,11 +211,30 @@
                 </div>
               </div>
               <p class="offer-benefit">Montage inklusive</p>
-              <p>Beim Kauf von vier Reifen ist die Montage bereits inklusive. Wir stimmen Reifen, Verfügbarkeit und Termin passend zu Ihrem Fahrzeug direkt mit Ihnen ab.</p>
+              <p>Beim Kauf von vier Reifen ist die Montage bereits inklusive. So erhalten Sie Reifenservice in Kassel, passende Auswahl und Montage bequem aus einer Hand.</p>
             </div>
             <div class="offer-featured-action">
               <a class="button button-primary" href="https://wa.me/4917680794113?text=Hallo%20CHECKPOINT%2C%20ich%20interessiere%20mich%20f%C3%BCr%20die%20Reifen-Aktion." target="_blank" rel="noopener noreferrer">Reifen-Angebot anfragen</a>
               <small>Schnell und unkompliziert per WhatsApp</small>
+            </div>
+          </article>
+
+          <article class="offer-card offer-card-featured reifenhotel-card">
+            <div class="offer-main-copy">
+              <div class="offer-card-head">
+                <span class="offer-icon" aria-hidden="true">▣</span>
+                <div>
+                  <p class="eyebrow">Reifenhotel in Kassel</p>
+                  <h2>Einlagern & saisonal wechseln</h2>
+                </div>
+              </div>
+              <p class="offer-benefit">Ab 10 € / Monat</p>
+              <p>Kein Platz für den zweiten Radsatz? Wir lagern Ihre Sommer- oder Winterräder sicher bei CHECKPOINT in Kassel und wechseln sie bequem passend zur Saison.</p>
+              <p>Einlagerungskunden profitieren zusätzlich von Vorteilen bei neuen Reifen, Montage und Auswuchten.</p>
+            </div>
+            <div class="offer-featured-action">
+              <a class="button button-primary" href="https://wa.me/4917680794113?text=Hallo%20CHECKPOINT%2C%20ich%20interessiere%20mich%20f%C3%BCr%20das%20Reifenhotel%20ab%2010%20Euro%20pro%20Monat." target="_blank" rel="noopener noreferrer">Reifenhotel anfragen</a>
+              <small>Einlagern, saisonal wechseln und Platz sparen</small>
             </div>
           </article>
 
@@ -221,7 +247,7 @@
               </div>
             </div>
             <p class="offer-benefit">Diagnose-Check inklusive</p>
-            <p>Bei Arbeiten an Heizung oder Klimaanlage lesen wir den Fehlerspeicher Ihres Fahrzeugs elektronisch aus – ohne zusätzliche Berechnung.</p>
+            <p>Bei Arbeiten an Heizung oder Klimaanlage lesen wir den Fehlerspeicher Ihres Fahrzeugs elektronisch aus – für eine gezielte Diagnose ohne zusätzliche Berechnung.</p>
             <div class="offer-card-footer"><small>Elektronischer Fehlerspeicher-Check</small><a class="offer-link" href="https://wa.me/4917680794113?text=Hallo%20CHECKPOINT%2C%20ich%20interessiere%20mich%20f%C3%BCr%20den%20Klima-%20oder%20Heizungsservice." target="_blank" rel="noopener noreferrer">Anfragen →</a></div>
           </article>
 
@@ -234,7 +260,7 @@
               </div>
             </div>
             <p class="offer-benefit">Wir sparen Ihnen den Weg</p>
-            <p>Auf Wunsch holen wir Ihr Fahrzeug nach Absprache ab und bringen es nach erledigter Arbeit wieder zurück.</p>
+            <p>Auf Wunsch holen wir Ihr Fahrzeug bequem bei Ihnen ab und bringen es nach erledigter Werkstattarbeit zuverlässig wieder zurück.</p>
             <div class="offer-card-footer"><small>Nach Absprache und Verfügbarkeit</small><a class="offer-link" href="https://wa.me/4917680794113?text=Hallo%20CHECKPOINT%2C%20ich%20interessiere%20mich%20f%C3%BCr%20den%20Hol-%20%26%20Bringservice." target="_blank" rel="noopener noreferrer">Anfragen →</a></div>
           </article>
 
@@ -247,22 +273,11 @@
               </div>
             </div>
             <p class="offer-benefit">Ab 75 €</p>
-            <p>Ölwechsel inklusive Motoröl, Ölfilter und Arbeitsleistung – transparent als Komplettpaket ab 75 €.</p>
+            <p>Ölwechsel in Kassel inklusive Motoröl, Ölfilter und Arbeitsleistung – transparent als Komplettpaket ab 75 €.</p>
             <div class="offer-card-footer"><small>Öl, Filter & Arbeitsleistung inklusive</small><a class="offer-link" href="https://wa.me/4917680794113?text=Hallo%20CHECKPOINT%2C%20ich%20interessiere%20mich%20f%C3%BCr%20den%20%C3%96lwechsel%20ab%2075%20Euro." target="_blank" rel="noopener noreferrer">Anfragen →</a></div>
           </article>
 
-          <article class="offer-card">
-            <div class="offer-card-head">
-              <span class="offer-icon" aria-hidden="true">▣</span>
-              <div>
-                <p class="eyebrow">Reifenhotel</p>
-                <h2>Einlagern & saisonal wechseln</h2>
-              </div>
-            </div>
-            <p class="offer-benefit">Ab 10 € / Monat</p>
-            <p>Kein Platz für den zweiten Radsatz? Wir lagern Ihre Sommer- oder Winterräder sicher bei CHECKPOINT und wechseln sie passend zur Saison.</p>
-            <div class="offer-card-footer"><small>Vorteile bei neuen Reifen, Montage & Auswuchten</small><a class="offer-link" href="https://wa.me/4917680794113?text=Hallo%20CHECKPOINT%2C%20ich%20interessiere%20mich%20f%C3%BCr%20das%20Reifenhotel%20ab%2010%20Euro%20pro%20Monat." target="_blank" rel="noopener noreferrer">Anfragen →</a></div>
-          </article>
+
         </div>
 
         <p class="offer-note">Details zu Verfügbarkeit und Termin stimmen wir direkt mit Ihnen ab.</p>
