@@ -57,24 +57,6 @@ document.querySelectorAll('.site-footer .footer-grid').forEach(footerGrid => {
     copyrightLinks.append(copyright, ...legalLinks);
     legalColumn.querySelector('.footer-links')?.remove();
   }
-
-  const tools = document.createElement('div');
-  tools.className = 'footer-tools';
-  tools.innerHTML = `
-    <button class="footer-chatbot" type="button" disabled title="Der Chatbot wird später freigeschaltet">
-      <span aria-hidden="true">✦</span> Chatbot <small>Demnächst</small>
-    </button>
-    <div class="footer-socials" aria-label="Soziale Netzwerke · demnächst">
-      <button type="button" disabled aria-label="Facebook · demnächst" title="Facebook · demnächst">f</button>
-      <button type="button" disabled aria-label="Instagram · demnächst" title="Instagram · demnächst">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="social-dot" cx="17.4" cy="6.7" r="1"></circle></svg>
-      </button>
-      <button type="button" disabled aria-label="TikTok · demnächst" title="TikTok · demnächst">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.1a4.1 4.1 0 1 1-3.2-4V13a1.8 1.8 0 1 0 .8 1.5V4h2.4Zm0 0c.5 2.1 1.8 3.5 4 4v2.5c-1.6-.2-2.9-.8-4-1.8"></path></svg>
-      </button>
-    </div>
-  `;
-  legalColumn.append(tools);
 });
 
 document.querySelectorAll('.footer-bottom span').forEach(node => {
