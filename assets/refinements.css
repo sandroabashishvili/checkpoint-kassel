@@ -95,7 +95,7 @@
 .home-offer { padding-top: 10px; }
 .home-offer-card {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 250px);
   align-items: center;
   gap: clamp(28px, 5vw, 64px);
   padding: clamp(28px, 4vw, 44px);
@@ -106,8 +106,9 @@
     linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.012));
 }
 .home-offer-card h2 { max-width: 760px; margin-bottom: 12px; font-size: clamp(1.8rem, 3.2vw, 2.8rem); }
-.home-offer-card p:last-child { max-width: 720px; margin-bottom: 0; color: var(--muted); }
-.home-offer-actions { display: grid; justify-items: start; gap: 12px; min-width: 210px; }
+.home-offer-card p:last-child { max-width: 900px; margin-bottom: 0; color: var(--muted); }
+.home-offer-actions { display: grid; justify-items: stretch; gap: 12px; min-width: 0; }
+.home-offer-actions .button { width: 100%; }
 .home-offer-actions .text-link { margin-top: 0; }
 
 /* Real actions only: compact mobile contact bar. */
@@ -155,4 +156,10 @@
     background: radial-gradient(circle at 100% 0, rgba(8,122,60,.08), transparent 34%), #fff;
     box-shadow: 0 12px 30px rgba(27,49,72,.07);
   }
+}
+
+
+@media (max-width: 900px) {
+  .home-offer-card { grid-template-columns: 1fr; }
+  .home-offer-actions { width: 100%; max-width: 320px; }
 }
